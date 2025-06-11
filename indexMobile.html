@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <script src="js/jquery-min-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // If NOT a mobile device, assume desktop and redirect
+            if (!/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                window.location.href = "index.html"; // Replace with your desktop page URL
+            }
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unique Mirror</title>
@@ -292,7 +301,7 @@
     </footer>
 
 
-    <script src="js/jquery-min-3.7.1.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 
